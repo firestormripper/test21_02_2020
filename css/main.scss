@@ -1,0 +1,150 @@
+
+
+
+$primary-color-dark:     #616161;
+$primary-color:          #9E9E9E;
+$primary-color-light:    #F5F5F5;
+$primary-color-text:     #212121;
+$accent-color:           #607D8B;
+$primary-text-color:     #212121;
+$secondary-text-color:   #757575;
+$divider-color:          #BDBDBD;
+$button-color:           red;
+$span-color:             purple;
+$footer-color:           black;
+$button-secondary-color: rgb(133, 62, 62);
+
+html {
+    font-size: 10px;
+}
+
+
+body {
+    font-size: 16px;
+    background-color: $divider-color;
+    color: $secondary-text-color;
+    //
+    .container {
+        padding: 0;
+    }
+    //main header
+    .title {
+        font-weight: bold;
+        color: $primary-color-text;
+        margin: 1rem 0;
+        padding: 1rem;
+        font-size: 1.5em;
+        overflow: hidden;
+        text-align: center;
+        h4 {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+        }
+    }
+    //button
+    .btn {
+        border: 2px solid $primary-color-light;
+        background-color: $button-color;
+        color: $primary-text-color;
+        font-weight: bold;
+        border-radius: 0.5rem;
+        font-size: 1em;
+        padding: 1rem 2rem;
+        margin-top: 10px;
+        &:hover {
+            background-color: $button-secondary-color;
+        }
+    }
+    //menu
+    .navbar {
+        padding: 0.3rem 5rem;
+        border: 1px solid $primary-color-light;
+        font-weight: bold;
+        font-size: 17px;
+        .number-phone {
+            color: $primary-color;
+        }
+        .navbar-nav { 
+            li.nav-item > nav-link {
+                color: $primary-color-light;
+                &:hover {
+                    color: $span-color;
+                }
+            }
+            li.active > a.nav-link {
+                color: $primary-color;
+            }
+        }
+    }
+    //header
+    header {
+        background-image: url('../img/background.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10rem 3rem;
+        text-align: center;
+        p {
+            color: $secondary-text-color;
+        }
+        h4 {
+            font-size: 20px;
+            font-weight: bold;
+            color: $secondary-text-color;
+            > span {
+                color: $span-color;
+            }
+        }
+    }
+    //different goods
+    .news {
+        margin-bottom: 3rem;
+        margin-top: 4rem;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            p {
+                padding: 0;
+                margin: 0;
+                font-weight: bold;
+                color: $primary-color-light;
+                text-shadow: 0 0 3px $primary-text-color;
+                position: absolute;
+                font-size: 1.5em;
+                z-index: 100;
+                transition: all 1s;
+            }
+            img {
+                transition: all 1s;
+            }
+            &:hover {
+                img {
+                    background-color: $primary-color-light;
+                    transform: scale(1.2);
+                }
+                p {
+                    transform: scale(0.8);
+                }
+            }
+        }
+    }
+    //footer
+    footer {
+        color: $primary-color-light;
+        font-weight: bold;
+        min-height: 5rem;
+        background: $footer-color;
+        padding: 6rem;
+        span {
+            margin: 5px;;
+        }
+        button {
+            margin-left: 200px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+    }
+}

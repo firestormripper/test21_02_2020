@@ -1,0 +1,156 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 16px;
+  background-color: #BDBDBD;
+  color: #757575;
+}
+
+body .container {
+  padding: 0;
+}
+
+body .title {
+  font-weight: bold;
+  color: #212121;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 1.5em;
+  overflow: hidden;
+  text-align: center;
+}
+
+body .title h4 {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+body .btn {
+  border: 2px solid #F5F5F5;
+  background-color: red;
+  color: #212121;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  font-size: 1em;
+  padding: 1rem 2rem;
+  margin-top: 10px;
+}
+
+body .btn:hover {
+  background-color: #853e3e;
+}
+
+body .navbar {
+  padding: 0.3rem 5rem;
+  border: 1px solid #F5F5F5;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+body .navbar .number-phone {
+  color: #9E9E9E;
+}
+
+body .navbar .navbar-nav li.nav-item > nav-link {
+  color: #F5F5F5;
+}
+
+body .navbar .navbar-nav li.nav-item > nav-link:hover {
+  color: purple;
+}
+
+body .navbar .navbar-nav li.active > a.nav-link {
+  color: #9E9E9E;
+}
+
+body header {
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem 3rem;
+  text-align: center;
+}
+
+body header p {
+  color: #757575;
+}
+
+body header h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #757575;
+}
+
+body header h4 > span {
+  color: purple;
+}
+
+body .news {
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+}
+
+body .news a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
+body .news a p {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  color: #F5F5F5;
+  text-shadow: 0 0 3px #212121;
+  position: absolute;
+  font-size: 1.5em;
+  z-index: 100;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+body .news a img {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+body .news a:hover img {
+  background-color: #F5F5F5;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body .news a:hover p {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+body footer {
+  color: #F5F5F5;
+  font-weight: bold;
+  min-height: 5rem;
+  background: black;
+  padding: 6rem;
+}
+
+body footer span {
+  margin: 5px;
+}
+
+body footer button {
+  margin-left: 200px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=main.css.map */
